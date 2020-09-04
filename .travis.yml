@@ -30,9 +30,9 @@ matrix:
         if: branch = main OR tag IS present
       - env: STACK=heroku-18
         if: branch = main OR tag IS present
-      - env: STACK=cedar-14 HEROKU_PHP_PLATFORM_REPOSITORIES="- https://buildpacks.oss-accelerate.aliyuncs.com/php/dist-cedar-14-develop/"
+      - env: STACK=cedar-14 HEROKU_PHP_PLATFORM_REPOSITORIES="- http://buildpacks.drycc.cc/php/dist-cedar-14-develop/"
         if: branch != main AND tag IS blank
-      - env: STACK=heroku-16 HEROKU_PHP_PLATFORM_REPOSITORIES="- https://buildpacks.oss-accelerate.aliyuncs.com/php/dist-heroku-16-develop/"
+      - env: STACK=heroku-16 HEROKU_PHP_PLATFORM_REPOSITORIES="- http://buildpacks.drycc.cc/php/dist-heroku-16-develop/"
         if: branch != main AND tag IS blank
-      - env: STACK=heroku-18 HEROKU_PHP_PLATFORM_REPOSITORIES="- https://buildpacks.oss-accelerate.aliyuncs.com/php/dist-heroku-18-develop/"
+      - env: STACK=heroku-18 HEROKU_PHP_PLATFORM_REPOSITORIES="- http://buildpacks.drycc.cc/php/dist-heroku-18-develop/"
         if: branch != main AND tag IS blank
