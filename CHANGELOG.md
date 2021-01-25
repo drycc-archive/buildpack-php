@@ -1,5 +1,48 @@
 # heroku-buildpack-php CHANGELOG
 
+## v188 (2021-01-08)
+
+### ADD
+
+- PHP/7.3.26 [David Zuelke]
+- PHP/7.4.14 [David Zuelke]
+- PHP/8.0.1 [David Zuelke]
+- ext-blackfire/1.48.1 [David Zuelke]
+- ext-rdkafka/4.1.2 [David Zuelke]
+
+## v187 (2020-12-09)
+
+### ADD
+
+- ext-rdkafka/4.1.1 [David Zuelke]
+- ext-newrelic/9.15.0.293 [David Zuelke]
+
+### CHG
+
+- librdkafka/1.5.3 [David Zuelke]
+
+### FIX
+
+- ext-redis is missing for PHP 8 (#452) [David Zuelke]
+
+## v186 (2020-12-07)
+
+### ADD
+
+- PHP/7.3.25 [David Zuelke]
+- PHP/7.4.13 [David Zuelke]
+- PHP/8.0.0 (for stacks `heroku-18` and `heroku-20`) [David Zuelke]
+- ext-ev/1.0.9 [David Zuelke]
+- ext-mongodb/1.9.0 [David Zuelke]
+- ext-blackfire/1.46.4 [David Zuelke]
+- ext-event/3.0.2 [David Zuelke]
+
+### CHG
+
+- Default to PHP 8 if possible for heroku-20 [David Zuelke]
+- Composer/1.10.19 [David Zuelke]
+- Composer/2.0.8 [David Zuelke]
+
 ## v185 (2020-11-22)
 
 ### FIX

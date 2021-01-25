@@ -42,20 +42,22 @@ end
 
 def expect_exit(expect: :to, operator: :eq, code: 0)
 	raise ArgumentError, "Expected a block but none given" unless block_given?
-	output = yield
-	expect($?.exitstatus).method(expect).call(
+	run_obj = yield
+	expect(run_obj.status.exitstatus).method(expect).call(
 		method(operator).call(code),
-		"Expected exit code #{$?.exitstatus} #{expect} be #{operator} to #{code}; output:\n#{output}"
+		"Expected exit code #{run_obj.status.exitstatus} #{expect} be #{operator} to #{code}; output:\n#{run_obj.output}"
 	)
-	output # so that can be tested too
+	run_obj # so that can be tested too
 end
 
 def expected_default_php(stack)
 	case stack
 		when "cedar-14", "heroku-16"
 			"5.6"
-		else
+		when "heroku-18"
 			"7.4"
+		else
+			"8.0"
 	end
 end
 
@@ -66,7 +68,7 @@ def php_on_stack?(series)
 		when "heroku-16"
 			available = ["5.6", "7.0", "7.1", "7.2", "7.3", "7.4"]
 		when "heroku-18"
-			available = ["7.1", "7.2", "7.3", "7.4"]
+			available = ["7.1", "7.2", "7.3", "7.4", "8.0"]
 		else
 			available = ["7.3", "7.4", "8.0"]
 	end
