@@ -1,5 +1,28 @@
 # heroku-buildpack-php CHANGELOG
 
+## v189 (2021-02-05)
+
+### ADD
+
+- ext-rdkafka/5.0.0 [David Zuelke]
+- PHP/7.3.27 [David Zuelke]
+- PHP/7.4.15 [David Zuelke]
+- PHP/8.0.2 [David Zuelke]
+- ext-ev/1.1.1 [David Zuelke]
+- ext-redis/5.3.3 [David Zuelke]
+- ext-blackfire/1.49.1 [David Zuelke]
+- ext-newrelic/9.16.0.295 [David Zuelke]
+
+### CHG
+
+- Drop support for cedar-14 [David Zuelke]
+- Drop support for HHVM [David Zuelke]
+- Drop support for PHP 5.5 [David Zuelke]
+- Use PHP 7.4 for bootstrapping [David Zuelke]
+- librdkafka/1.6.0 [David Zuelke]
+- Composer/1.10.20 [David Zuelke]
+- Composer/2.0.9 [David Zuelke]
+
 ## v188 (2021-01-08)
 
 ### ADD
