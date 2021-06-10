@@ -1,10 +1,67 @@
 # heroku-buildpack-php CHANGELOG
 
+## v193 (2021-06-07)
+
+### ADD
+
+- ext-newrelic for PHP 8 [David Zuelke]
+- Nginx/1.20.1 [David Zuelke]
+- PHP/7.4.20 [David Zuelke]
+- PHP/8.0.7 [David Zuelke]
+- ext-pcov/1.0.9 [David Zuelke]
+- ext-mongodb/1.9.1 [David Zuelke]
+- ext-event/3.0.4 [David Zuelke]
+- ext-ev/1.1.2 [David Zuelke]
+- ext-apcu/5.1.20 [David Zuelke]
+
+### CHG
+
+- Remove support for heroku-16 [David Zuelke]
+- Bump minimum supported PHP version to 7.1.x [David Zuelke]
+- librdkafka/1.7.0 [David Zuelke]
+- Composer/2.1.2 [David Zuelke]
+
+## v192 (2021-05-06)
+
+### ADD
+
+- PHP/7.3.28 [David Zuelke]
+- ext-phalcon/4.1.2 [David Zuelke]
+- ext-newrelic/9.17.1.301 [David Zuelke]
+- PHP/7.4.19 [David Zuelke]
+- PHP/8.0.6 [David Zuelke]
+
+### CHG
+
+- Composer/1.10.22 [David Zuelke]
+- Composer/2.0.13 [David Zuelke]
+- Bump ext-apcu_bc (bundled with ext-apcu) to 1.0.5 [David Zuelke]
+
+### FIX
+
+- ext-apcu_bc should only be built for PHP 5/7 [David Zuelke]
+
+## v191 (2021-04-15)
+
+### ADD
+
+- ext-pcov/1.0.8 [David Zuelke]
+- ext-blackfire/1.54.0 [David Zuelke]
+- ext-amqp/1.11.0beta (PHP 8.0.* only) [David Zuelke]
+- ext-redis/5.3.4 [David Zuelke]
+- ext-event/3.0.3 [David Zuelke]
+
+### CHG
+
+- libcassandra/2.16.0 [David Zuelke]
+- Composer/1.10.21 [David Zuelke]
+- Composer/2.0.12 [David Zuelke]
+
 ## v190 (2021-03-04)
 
 ### ADD
 
-- PHP/7.4.15 [David Zuelke]
+- PHP/7.4.16 [David Zuelke]
 - PHP/8.0.3 [David Zuelke]
 - ext-blackfire/1.50.0 (PHP 5.6) [David Zuelke]
 - ext-blackfire/1.51.0 (PHP 7+) [David Zuelke]
